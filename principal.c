@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "scanner.h"
+#include "parser.h"
 
 int main(){
 
@@ -9,5 +10,9 @@ int main(){
 
 	printf(getMensaje(scanner));
 	printf ("nueva linea");
+	Parser* parser = newParser();
+	setMaximo(parser,20);
+
+
 	return 0;
 }
